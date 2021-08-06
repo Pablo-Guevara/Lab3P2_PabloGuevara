@@ -70,7 +70,7 @@ public class programadores extends entidades{
 
     @Override
     public String toString() {
-        return "Programadores: {" + "puesto=" + puesto + ", años en el Cargo=" + añosEnCargo + ", salarioBase=" + salarioBase + ", lenguajeProgaDomina=" + lenguajeProgaDomina + ", horario=" + horario + '}';
+        return super.toString()+ "Programadores: {" + "puesto=" + puesto + ", años en el Cargo=" + añosEnCargo + ", salarioBase=" + salarioBase + ", lenguajeProgaDomina=" + lenguajeProgaDomina + ", horario=" + horario + '}';
     }
     
     

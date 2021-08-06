@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class comida {
     private String nombreComida;
-    private double acompañamiento;
+    private double precio;
     private int cantAcompañamientos;
     
     private ArrayList<acompañamiento> listaAcompañamientos=new ArrayList();
@@ -12,11 +12,13 @@ public class comida {
     public comida() {
     }
 
-    public comida(String nombreComida, double acompañamiento, int cantAcompañamientos) {
+    public comida(String nombreComida, double precio, int cantAcompañamientos) {
         this.nombreComida = nombreComida;
-        this.acompañamiento = acompañamiento;
+        this.precio = precio;
         this.cantAcompañamientos = cantAcompañamientos;
     }
+
+   
 
     public String getNombreComida() {
         return nombreComida;
@@ -26,13 +28,15 @@ public class comida {
         this.nombreComida = nombreComida;
     }
 
-    public double getAcompañamiento() {
-        return acompañamiento;
+    public double getPrecio() {
+        return precio;
     }
 
-    public void setAcompañamiento(double acompañamiento) {
-        this.acompañamiento = acompañamiento;
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
+
+  
 
     public int getCantAcompañamientos() {
         return cantAcompañamientos;
@@ -50,14 +54,11 @@ public class comida {
         this.listaAcompañamientos = listaAcompañamientos;
     }
 
-
-
     @Override
     public String toString() {
-        return "comida{" + "nombreComida=" + nombreComida + ", acompa\u00f1amiento=" + acompañamiento + ", cantAcompa\u00f1amientos=" + cantAcompañamientos + ", listaAcompa\u00f1amientos=" + listaAcompañamientos + '}';
+        return "comida{" + "nombreComida=" + nombreComida + ", precio=" + precio + ", cantAcompa\u00f1amientos=" + cantAcompañamientos + ", listaAcompa\u00f1amientos=" + listaAcompañamientos + '}';
     }
 
-   
     
     
 }

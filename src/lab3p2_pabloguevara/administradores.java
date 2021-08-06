@@ -59,7 +59,7 @@ public class administradores extends entidades{
 
     @Override
     public String toString() {
-        return "Administradores: {" + "puesto=" + puesto + ", años en el Cargo=" + añosEnCargo + ", salarioBase=" + salarioBase + ", a\u00f1osExpVentas=" + añosExpVentas + '}';
+        return super.toString()+"Administradores: {" + "puesto=" + puesto + ", años en el Cargo=" + añosEnCargo + ", salarioBase=" + salarioBase + ", a\u00f1osExpVentas=" + añosExpVentas + '}';
     }
     
     

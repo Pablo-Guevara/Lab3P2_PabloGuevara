@@ -5,19 +5,21 @@ import java.util.ArrayList;
 public class tienda {
     private String nombre;
     private String ubicacion;
-    private String cantEmpleados;
+    private int cantEmpleados;
     private double tiempoEsperaPreparacionMinutos;
     private ArrayList<articulos> listaArticulos=new ArrayList();
 
     public tienda() {
     }
 
-    public tienda(String nombre, String ubicacion, String cantEmpleados, double tiempoEsperaPreparacionMinutos) {
+    public tienda(String nombre, String ubicacion, int cantEmpleados, double tiempoEsperaPreparacionMinutos) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
         this.cantEmpleados = cantEmpleados;
         this.tiempoEsperaPreparacionMinutos = tiempoEsperaPreparacionMinutos;
     }
+
+
 
     public String getNombre() {
         return nombre;
@@ -35,13 +37,15 @@ public class tienda {
         this.ubicacion = ubicacion;
     }
 
-    public String getCantEmpleados() {
+    public int getCantEmpleados() {
         return cantEmpleados;
     }
 
-    public void setCantEmpleados(String cantEmpleados) {
+    public void setCantEmpleados(int cantEmpleados) {
         this.cantEmpleados = cantEmpleados;
     }
+
+  
 
     public double getTiempoEsperaPreparacionMinutos() {
         return tiempoEsperaPreparacionMinutos;

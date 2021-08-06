@@ -30,6 +30,59 @@ public class motoristas extends entidades{
         this.medioTransporte = medioTransporte;
         this.cantMaxEncargos = cantMaxEncargos;
     }
+
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public int getAñosEnCargo() {
+        return añosEnCargo;
+    }
+
+    public void setAñosEnCargo(int añosEnCargo) {
+        this.añosEnCargo = añosEnCargo;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public double getComisiones() {
+        return comisiones;
+    }
+
+    public void setComisiones(double comisiones) {
+        this.comisiones = comisiones;
+    }
+
+    public String getMedioTransporte() {
+        return medioTransporte;
+    }
+
+    public void setMedioTransporte(String medioTransporte) {
+        this.medioTransporte = medioTransporte;
+    }
+
+    public int getCantMaxEncargos() {
+        return cantMaxEncargos;
+    }
+
+    public void setCantMaxEncargos(int cantMaxEncargos) {
+        this.cantMaxEncargos = cantMaxEncargos;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+ "motoristas{" + "puesto=" + puesto + ", añosEnCargo=" + añosEnCargo + ", salarioBase=" + salarioBase + ", comisiones=" + comisiones + ", medioTransporte=" + medioTransporte + ", cantMaxEncargos=" + cantMaxEncargos + '}';
+    }
     
     
 }
