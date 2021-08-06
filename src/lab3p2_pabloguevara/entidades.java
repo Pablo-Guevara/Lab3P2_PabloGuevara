@@ -57,6 +57,11 @@ public class entidades {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+
+    @Override
+    public String toString() {
+        return "Entidades: {" + "nombre=" + nombre + ", apellido=" + apellido + ", ID=" + ID + ", usuario=" + usuario + ", contrase\u00f1a=" + contraseña + '}';
+    }
     
     
 }
